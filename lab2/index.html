@@ -5,28 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <title>Person list</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <body>
-  <div class="container">
+  <div class="container-fluid">
+  <div class="jumbotron">
+  <h1>Person List</h1>
+  <input id = "personInput" placeholder="Input Name" type="text"></input>
+  <button type="button"onclick="personList()" >Add person</button>
+  <!--when button is pressed, personList function is trigreed.
+!-->
+  <ol id="personList"></ol>
+</div>
+</div>
+    <div class="container-fluid">
     <div class="jumbotron">
-    <div class="row">
-      <div class="col-sm-4">
-        <h4>Responsive Name App</h4>
-      </div>
-        <div class="col-sm-4">
-          <input id= "personInput" placeholder="Input Name" type="text"></input>
-        </div>
-        <div class="col-sm-4">
-          <button type="button" class="btn btn-primary" onclick="personList()" >Add person</button>
-        </div>
-      </div>
-          <div>
-            <ol id="personList" class="well"></ol>
-          </ul>
-        </div>
-  </div>
-  </div>
 <div>
   <div class="container">
     <div class="jumbotron">
@@ -55,7 +49,7 @@
   <h4>some screenshots</h4><br>
   <img src="/Users/kushalatreya/Desktop/multimediaExercise/lab2/img1.png" alt="image" height="400" width="400">
   <img src="/Users/kushalatreya/Desktop/multimediaExercise/lab2/img2.png" alt="image" height="300" width="300">
-  <img src="/Users/kushalatreya/Desktop/multimediaExercise/lab2/img3.png" alt="image" height="200" width="150"> 
+  <img src="/Users/kushalatreya/Desktop/multimediaExercise/lab2/img3.png" alt="image" height="200" width="150">
 
 </div>
 </div>
