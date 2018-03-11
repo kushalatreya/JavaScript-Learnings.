@@ -1,10 +1,10 @@
 .container {
-  padding: 2em 5em;
+  padding: 2em 7em;
 }
 
 #canvas {
-  background: #800000;
-  border: 2px solid #000000;
+  background: #dea43f;
+  border: 2px solid #333;
 }
 
 h3 {
