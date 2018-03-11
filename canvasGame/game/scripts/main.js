@@ -30,7 +30,7 @@ function getMousePos(canvas, event) {
 function onClick(e) {
   var mousePos = getMousePos(canvas, e);
   if (!square && !game) {
-    var time = 20;
+    var time = 10;
     timer = setInterval(function() {
       if (time) {
         document.getElementById('time').innerHTML = time;
@@ -40,7 +40,7 @@ function onClick(e) {
         document.getElementById('time').innerHTML = "GAME OVER!";
         clearInterval(timer);
       }
-    }, 2000);
+    }, 1000);
     game = true;
     square = new Square(Math.random() * (canvas.width - 30), Math.random() * (canvas.height - 30), 30, 30);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
