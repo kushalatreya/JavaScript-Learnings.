@@ -1,6 +1,10 @@
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas
 //https://gist.github.com/bencentra/
 //youtube video
+function myFunction() {
+    location.reload();
+}
+
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
